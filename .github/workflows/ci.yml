@@ -15,7 +15,7 @@ jobs:
         with:
           ref: main
       - name: set Percy Token
-        run: set PERCY_TOKEN = '${{ secrets.PERCY_TOKEN }}'
+        run: set PERCY_TOKEN = eaf81bddfe14e03871b5f500cd9eecc8e2e34d1ecb0e66dd9990e5163ea84429
       - name: install Percy cli 
         run: yarn add @percy/cli
       - name: install Percy cypress
