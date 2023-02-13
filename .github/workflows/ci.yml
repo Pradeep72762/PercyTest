@@ -18,4 +18,4 @@ jobs:
       - name: resolving dependencies
         run: yarn 
       - name: Execute tests
-        run: yarn percy exec -- cypress run --spec 'cypress\e2e\specs\smoke-specs\cookie-consent\insightlive.cy.js'
+        run: yarn percy exec -- cypress run --spec .\cypress\e2e\specs\smoke-specs\cookie-consent\careers.cy.js
