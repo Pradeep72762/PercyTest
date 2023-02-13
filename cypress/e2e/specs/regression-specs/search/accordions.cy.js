@@ -15,12 +15,14 @@ describe("Check the search page's accordions for topics, universities, and progr
         searchPageObj.elements.topics()
             .invoke('attr', 'aria-expanded')
             .should('eq', 'true')
+        cy.percySnapshot();
     })
     it('When you click on Topics, the Topics section is collapsed : ', () => {
         searchPageObj.elements.topics().
             click()
             .invoke('attr', 'aria-expanded')
             .should('eq', 'false')
+        cy.percySnapshot();
     })
 
     it('Universities section is by default extended : ', () => {
