@@ -15,6 +15,9 @@
   },
   "devDependencies": {
     "cypress-mochawesome-reporter": "^3.2.3",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "@percy/cli": "^1.18.0",
+    "@percy/cypress": "^3.1.2",
+    "cypress": "^11.2.0"
   }
 }
