@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-      
+      - name: set Percy Token
+        run: set PERCY_TOKEN = ${{ secrets.PERCY_TOKEN }}
       - name: install Percy cli 
         run: yarn add @percy/cli
       - name: install Percy cypress
