@@ -15,9 +15,9 @@ jobs:
         with:
           ref: main
       
-      - name: install Percy cli and cypress
+      - name: install Percy cli 
         run: yarn add @percy/cli
-      - name: install Percy cli and cypress
+      - name: install Percy cypress
         run: yarn add @percy/cypress
       - name: Execute tests
-        run: yarn percy exec -- cypress run --spec ".\cypress\e2e\specs\smoke-specs\cookie-consent\careers.cy.js"
+        run: yarn percy exec -- cypress run --spec
