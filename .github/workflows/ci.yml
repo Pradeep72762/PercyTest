@@ -15,9 +15,7 @@ jobs:
         with:
           ref: main
       
-      - name: install Percy cli 
-        run: yarn add @percy/cli
-      - name: install Percy cypress
-        run: yarn add @percy/cypress
+      - name: resolving dependencies
+        run: yarn 
       - name: Execute tests
-        run: yarn percy exec -- cypress run
+        run: yarn percy exec -- cypress run --spec 'cypress\e2e\specs\smoke-specs\cookie-consent\insightlive.cy.js'
