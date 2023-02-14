@@ -1,24 +1,9 @@
 name: CI
-
-on:  
-  push:
-  pull_request:
-    branches:
-      - main 
-jobs:
-  ubuntu-job:
-    name: 'Percy Test in CI for PR'
-    runs-on: ubuntu-latest  # Can be self-hosted runner also
-    steps:
-      - name: 'Checkout the repository'
-        uses: actions/checkout@v2
-        with:
-          ref: main
-      - name: set Percy Token
-        run: set PERCY_TOKEN = eaf81bddfe14e03871b5f500cd9eecc8e2e34d1ecb0e66dd9990e5163ea84429
-      - name: install Percy cli 
-        run: yarn add @percy/cli
-      - name: install Percy cypress
-        run: yarn add @percy/cypress
-      - name: Execute tests
-        run: yarn percy exec -- cypress run
+  build:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v3
+      
+      # Build
+      
+      - name: Percy Test
+        run: yarn @percy/cli snapshot _site/ # or any directory such as public/
