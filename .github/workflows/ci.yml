@@ -6,4 +6,4 @@ name: CI
       # Build
       
       - name: Percy Test
-        run: yarn @percy/cli snapshot _site/ # or any directory such as public/
+        run: yarn percy exec -- cypress run --spec .\cypress\e2e\specs\smoke-specs\cookie-consent\careers.cy.js
