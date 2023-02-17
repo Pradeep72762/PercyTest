@@ -1,9 +1,5 @@
-name: CIII
-  build:
-    runs-on: ubuntu-latest
-      - uses: actions/checkout@v3
-      
-      # Build
-      
-      - name: Percy Test
-        run: yarn percy exec -- cypress run --spec .\cypress\e2e\specs\smoke-specs\cookie-consent\careers.cy.js
+name: 'RunCyPercyTests_IN'
+on: 
+  workflow_dispatch:
+    
+     
