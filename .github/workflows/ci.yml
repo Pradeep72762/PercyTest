@@ -1,4 +1,0 @@
-name: 'RunCyPercyTests_IN'
-on: 
-  workflow_dispatch:
-    
