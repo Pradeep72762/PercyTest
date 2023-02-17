@@ -1,4 +1,4 @@
-name: CI
+name: CIoo
   build:
     runs-on: ubuntu-latest
       - uses: actions/checkout@v3
